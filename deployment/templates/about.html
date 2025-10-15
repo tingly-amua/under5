@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About – Under-5 Mortality Prediction in Kenya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: "Inter", sans-serif;
+        }
+        .navbar {
+            background-color: #0d6efd;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+        .container {
+            max-width: 900px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            color: #0d6efd;
+            margin-bottom: 20px;
+        }
+        h5 {
+            margin-top: 25px;
+            color: #333;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .footer button {
+            font-size: 0.9rem;
+        }
+        .modal-content {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">🍼 Under-5 Mortality Predictor</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Predict</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>🍼 Under-5 Mortality Prediction in Kenya</h1>
+        <p class="text-center text-muted mb-4">
+            <strong>Moringa School Data Science Bootcamp | 2025 | Version v1.0</strong>
+        </p>
+
+        <h5>📘 Project Overview</h5>
+        <p>
+            Under-5 mortality — the probability of a child dying before reaching five years of age — 
+            remains one of the most critical indicators of a country's overall health and development.
+            Despite steady progress, it continues to be a major public health challenge in Kenya.
+        </p>
+
+        <p>
+            According to the World Health Organization (2024), <strong>sub-Saharan Africa recorded the highest under-5 mortality rate — 
+            74 deaths per 1,000 live births</strong>. Kenya’s rate, while improved from past decades, 
+            still reflects inequities across regions, maternal education, and access to healthcare.
+        </p>
+
+        <h5>🎯 Problem Statement</h5>
+        <p>
+            This project explores the question:  
+            <em>“What demographic, socioeconomic, and health-related factors most influence under-5 mortality in Kenya, 
+            and can we predict individual or community-level risk using machine learning?”</em>
+        </p>
+
+        <h5>🌍 Relevance to Sustainable Development Goals (SDG 3)</h5>
+        <p>
+            Reducing child mortality directly supports <strong>SDG 3: Good Health and Well-being</strong> — 
+            particularly <strong>Target 3.2</strong>, which aims to end preventable deaths of newborns and children under 5 by 2030.
+        </p>
+
+        <h5>👥 Stakeholders & Impact</h5>
+        <ul>
+            <li>Kenya Ministry of Health</li>
+            <li>Public Health Policy Makers</li>
+            <li>NGOs and Community Health Programs</li>
+            <li>Academic and Research Institutions</li>
+        </ul>
+
+        <p>
+            By leveraging predictive analytics, the model aims to:
+        </p>
+        <ul>
+            <li>Identify high-risk populations and geographic disparities</li>
+            <li>Support evidence-based interventions (e.g., immunization, maternal health)</li>
+            <li>Guide equitable allocation of limited resources</li>
+            <li>Ultimately reduce preventable child deaths</li>
+        </ul>
+
+        <h5>🧠 Technical Summary</h5>
+        <p>
+            The project uses <strong>Kenya DHS data</strong> and machine learning (XGBoost, SMOTE, feature engineering)
+            to classify risk based on household, maternal, and vaccination variables.  
+            Results are presented via a Flask web interface styled with Bootstrap 5.
+        </p>
+
+        <div class="footer mt-5">
+            <p>
+                Powered by <strong>Python</strong>, <strong>Flask</strong>, and <strong>XGBoost</strong> |
+                Styled with <strong>Bootstrap 5</strong>
+            </p>
+            <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#teamModal">👩‍💻 View Team</button>
+        </div>
+    </div>
+
+    <!-- Team Modal -->
+    <div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamModalLabel">Project Team</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled mb-0">
+                        <li><strong>Project Lead:</strong> [Your Name]</li>
+                        <li><strong>Institution:</strong> Moringa School – Data Science Bootcamp</li>
+                        <li><strong>Year:</strong> 2025</li>
+                        <li><strong>Version:</strong> v1.0</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

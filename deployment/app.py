@@ -100,6 +100,9 @@ def home():
         default_values=default_values,
         all_vars=all_vars,
     )
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 # -----------------------------
 # 5️⃣ Predict route
