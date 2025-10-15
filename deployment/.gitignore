@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.env.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# Pytest cache
+.pytest_cache/
+
+# MacOS
+.DS_Store
+
+# Heroku files we want to keep
+# Procfile, requirements.txt, runtime.txt, app.py, threshold.json, xgb_pipeline_diagnostic.pkl
+
+# Ignore other temporary files
+*.tmp
+*.bak
+*.swp

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #eef2f7;
+            font-family: "Inter", sans-serif;
+        }
+        .result-card {
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0d6efd;
+            text-align: center;
+            font-weight: 600;
+        }
+        .metric {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        .risk {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        .low { color: #198754; }     /* green */
+        .medium { color: #fd7e14; }  /* orange */
+        .high { color: #dc3545; }    /* red */
+    </style>
+</head>
+<body>
+    <div class="result-card">
+        <h2>🩺 Prediction Result</h2>
+        
+        <p class="metric">Predicted Probability: <strong>{{ predicted_probability }}</strong></p>
+        <p class="metric">Decision Threshold: <strong>{{ threshold|default(0) }}</strong></p>
+
+        <div class="risk 
+            {% if risk_level == 'Low' %}low{% elif risk_level == 'Medium' %}medium{% else %}high{% endif %}">
+        ⚖️ Risk Level: {{ risk_level }}
+        </div>
+
+        <p class="text-center mt-3 text-muted">
+            {{ interpretation }}
+        </p>
+
+
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-outline-primary">← New Prediction</a>
+        </div>
+    </div>
+</body>
+</html>
